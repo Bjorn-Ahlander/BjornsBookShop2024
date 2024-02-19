@@ -1,0 +1,33 @@
+﻿@using System.Net
+@using Microsoft.AspNetCore.Authorization
+@using BjornsBookShop2024.Controllers
+@using Microsoft.AspNetCore.Razor
+@model List<BjornsBookShop2024.Models.Book>
+
+@attribute [AllowAnonymous]
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Bjorns BookShop</h1>
+    @* <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p> *@
+</div>
+
+<p>
+    <a asp-controller="Orders" asp-action="Create">Här kan du beställa våra böcker</a>
+</p>
+
+<p>
+   @*  @foreach (var book in Model){
+        <a href="@Url.Action("Details", "Books", new { id = book.BookId})">
+    <a asp-action="Details" asp-controller="BooksController" asp-route-id="@item.Title"> *@
+        <img src="@Url.Content("~/images/KrigFred.jpg")" height="270" width="225" alt="error">
+    </a>    
+    </a>
+    <i *@mg src="@Url.Content("~/images/TrädgårdsDags.jpg")" height="270" width="225"
+         alt="error">
+    <img src="@Url.Content("~/images/DonQ.jpg")" height="270" width="225" alt="error">
+    <img src="@Url.Content("~/images/NallePuh.jpg")" height="270" width="225" border="1"
+         alt="error">
+</p>
