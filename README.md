@@ -1,2 +1,2 @@
 # BjornsBookShop2024.
-Presentation left
+Presentation is ready now
