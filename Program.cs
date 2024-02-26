@@ -18,7 +18,7 @@ public class Program
 
             //builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
             //    .AddEntityFrameworkStores<ApplicationD
-            //    bContext>();
+            ///    bContext>();
             //builder.Services.AddControllersWithViews();
             builder.Services.AddDefaultIdentity<BjornBookShopUser>(options => options.SignIn.RequireConfirmedAccount = false)
                 .AddRoles<IdentityRole>()
